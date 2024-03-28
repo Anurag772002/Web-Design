@@ -1,0 +1,86 @@
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(1.5);
+    transform: translate(200px,200px) scale(0.8);
+}
+.background,.foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+h1{
+    border:  2px solid yellow;
+    background-image: linear-gradient(black,red);
+    transform: translateY(-50px);
+    font-size: 7.5rem;
+    color: white;
+    text-shadow: 10px 10px 10px red;
+}
+section{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+}
+.bg{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.subheading{
+    font-size: 4rem;
+    padding: 5rem 0;
+    transform: translateX(40px,40px);
+}
+.text{
+    font-size: 1.5rem;
+    padding:  0 10rem;
+    margin:  5rem;
+}
+.bg1{
+    background-image: url(image/buggati.jpg);
+}
+.bg2{
+    background-image: url(image/famous-car-1208767_1280.jpg);
+}
+.bg3{
+    background-image: url(image/lamborghini-1359712_1280.jpg);
+}
+.desc{
+    border: 1px solid black;
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 40%;
+    left: 45%;
+    transform: translate(-35%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+    }
+.cars{
+    padding: 2rem;
+    font-size: 2rem;
+}    
